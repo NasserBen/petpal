@@ -4,7 +4,6 @@ import { useSession } from "next-auth/react";
 
 export default function userInfo() {
   const { data: session } = useSession();
-  console.log();
 
   return (
     <div className="shadow-1g p-8">

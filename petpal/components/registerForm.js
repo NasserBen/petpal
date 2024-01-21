@@ -60,6 +60,7 @@ export default function RegisterForm() {
         console.log("Created user!");
         router.push("/login");
       } else {
+        setError("Error. Refresh and try again.");
         console.log("User registration failed.", error);
       }
     } catch (error) {

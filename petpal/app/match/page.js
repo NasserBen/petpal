@@ -1,6 +1,7 @@
 "use client";
 
 import Card from "../../components/card.js";
+import { useState } from "react";
 
 const petData = [
   {
@@ -43,7 +44,7 @@ const petData = [
     id: 5,
     name: "Sophie",
     breed: "Turkish Angora",
-    gender: "Female",
+    gender: "female",
     size: "small",
     image:
       "https://images.unsplash.com/photo-1518288774672-b94e808873ff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHR1cmtpc2glMjBhbmdvcmElMjBnaW5nZXIlMjBjYXR8ZW58MHx8MHx8fDA%3D",
@@ -60,11 +61,27 @@ const petData = [
 ];
 
 export default function Match() {
+  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+
+  const handleLike = () => {
+    setCurrentCardIndex((prevIndex) => prevIndex + 1);
+  };
+
+  const handleDislike = () => {
+    setCurrentCardIndex((prevIndex) => prevIndex + 1);
+  };
+
   return (
-    <div className="flex flex-col items-center">
-      {petData.map((pet) => (
-        <Card key={pet.id} petData={pet} />
-      ))}
+    <div className="flex items-center justify-center h-[75vh]">
+      {currentCardIndex < petData.length && (
+        <Card
+          key={petData[currentCardIndex].id}
+          petData={petData[currentCardIndex]}
+          onLike={handleLike}
+          onDislike={handleDislike}
+        />
+      )}
+      {currentCardIndex >= petData.length && <div>All PetPals for today!</div>}
     </div>
   );
 }

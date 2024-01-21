@@ -13,14 +13,8 @@ export default function MyMatchBox({ petInfo }) {
   return (
     <div className="flex justify-between bg-gray-100 p-5 rounded-lg my-5">
       <div className="flex items-center">
-        <div className="w-12 h-12 overflow-hidden rounded-full mr-2">
-          <Image
-            src={image}
-            height={50}
-            width={50}
-            layout="responsive"
-            objectFit="cover"
-          />
+        <div className="w-12 h-12 image-container relative mr-2">
+          <Image src={image} layout="fill" className="rounded-full" />
         </div>
         <div>{name}</div>
       </div>
