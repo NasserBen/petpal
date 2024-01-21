@@ -60,7 +60,7 @@ export default function MatchPage() {
   ];
 
   return (
-    <div className="mx-80 mt-10 mb-36">
+    <div className="flex flex-col justify-center max-w-xl mx-auto mt-10 mb-36">
       <div className="text-3xl font-bold">Pending Matches</div>
       {petData.map((pet) => (
         <PendingMatchBox key={pet.id} petInfo={pet} />
