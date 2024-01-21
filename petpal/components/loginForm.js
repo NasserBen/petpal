@@ -29,7 +29,7 @@ export default function LogInForm() {
         return;
       }
 
-      router.replace("dashboard");
+      router.replace("profile");
     } catch (error) {
       console.log(error);
     }
@@ -90,7 +90,7 @@ export default function LogInForm() {
               </form>
             </div>
             <Link className="text-xs mt-2 text-right" href={"/signup"}>
-              Already have an account?
+              Don't have an account?
               <span className="underline px-1">Sign Up!</span>
             </Link>
           </div>

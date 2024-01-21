@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaSearch, FaHeart, FaPaw } from "react-icons/fa";
-
 import { useSession } from "next-auth/react";
 
 const Navbar = () => {

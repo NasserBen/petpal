@@ -1,6 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  const { data: session } = useSession();
+
+  if (session) redirect("/match");
+
   return (
     <main className="flex tems-center justify-center h-[85vh]">
       <div className="flex flex-col items-center justify-center">
