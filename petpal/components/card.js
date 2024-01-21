@@ -16,9 +16,9 @@ export default function Card({petData}){
         <div key={id} className="">
           <div className="flex flex-col items-center mt-5 border border-solid border-#018496 rounded p-4 max-w-80 bg-sky-200">
             <Image src={image} className="mb-2" height={200} width={200} />
-            <div className="flex flex-row pl-5">
-              <p className="text-md font-semibold">{name}</p>
-              <span style={{ width: '5px' }}></span> 3
+            <div className="flex flex-row  ">
+              <p className="text-md font-semibold ">{name}</p>
+              <span style={{ width: '5px' }}></span> 
               {/* {gender === 'female' && <IoMdFemale size={20} color="#018496" />} */}
             </div>
             <p className="text-sm">{breed}</p>
