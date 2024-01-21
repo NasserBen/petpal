@@ -77,11 +77,13 @@ export default function Profile() {
         </div>
       </div>
       <div className="mt-3">
-        I'm a friendly individual who believes in the magic of pet connections.
-        Whether it's bonding over shared stories of our pets' antics or
-        organizing weekend picnics for our fur babies, I'm all in! Besides pet
-        playdates, I enjoy exploring new pet-friendly cafes and capturing
-        adorable moments with my pet!
+        <p>
+          I'm a friendly individual who believes in the magic of pet
+          connections. Whether it's bonding over shared stories of our pets'
+          antics or organizing weekend picnics for our fur babies, I'm all in!
+          Besides pet playdates, I enjoy exploring new pet-friendly cafes and
+          capturing adorable moments with my pet!
+        </p>
       </div>
 
       <div className="flex justify-between mt-20">

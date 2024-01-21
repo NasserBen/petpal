@@ -90,7 +90,7 @@ export default function LogInForm() {
               </form>
             </div>
             <Link className="text-xs mt-2 text-right" href={"/signup"}>
-              Don't have an account?
+              <p>Don't have an account?</p>
               <span className="underline px-1">Sign Up!</span>
             </Link>
           </div>
